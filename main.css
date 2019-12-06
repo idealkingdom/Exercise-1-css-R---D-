@@ -9,7 +9,6 @@
 @media (min-width:320px)  { 
 		div.tcontainer{
 			background: white;
-			box-shadow: 4px 4px 4px 4px;
 			border: 4px outset rgba(28,110,164,0.55);
 			outline-offset: 6px;
 			margin: 20px 0 0 0 ;
