@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Exercise 1</title>
 	<link rel="stylesheet" href="main.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
 
@@ -17,7 +18,7 @@
 	<table class="grid borderseparate">
 		<thead>
 			<tr>
-				<th id="Q46_header0"></th>
+				<th id="Q46_header0" style="visibility: hidden"></th>
 				<th id="Q46_header1" class="scale">Agree strongly</th>
 				<th id="Q46_header2" class="scale">Agree somewhat</th>
 				<th id="Q46_header3" class="scale">Neither agree nor disagree</th>
@@ -29,90 +30,115 @@
 			<tr>
 				<th class="gridlabel">Looks high-quality</th>
 				<td headers="Q46_header1" class="gridcell"><input tabindex="1" type="radio" name="Q46_5" id="Q46_5_1" value="1">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_5_1">Agree strongly</label></div>
 				</td>
 				<td headers="Q46_header2" class="gridcell"><input tabindex="2" type="radio" name="Q46_5" id="Q46_5_2" value="2">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_5_2">Agree somewhat</label></div>
 				</td>
 				<td headers="Q46_header3" class="gridcell"><input tabindex="3" type="radio" name="Q46_5" id="Q46_5_3" value="3">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_5_3">Neither agree nor disagree</label></div>
 				</td>
 				<td headers="Q46_header4" class="gridcell"><input tabindex="4" type="radio" name="Q46_5" id="Q46_5_4" value="4">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_5_4">Disagree somewhat</label></div>
 				</td>
 				<td headers="Q46_header5" class="gridcell"><input tabindex="5" type="radio" name="Q46_5" id="Q46_5_5" value="5">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_5_5">Disagree strongly</label></div>
 				</td>
 			</tr>
 			<tr>
 				<th class="gridlabel">Is well organized</th>
 				<td headers="Q46_header1" class="gridcell"><input tabindex="6" type="radio" name="Q46_4" id="Q46_4_1" value="1">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_4_1">Agree strongly</label></div>
 				</td>
 				<td headers="Q46_header2" class="gridcell"><input tabindex="7" type="radio" name="Q46_4" id="Q46_4_2" value="2">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_4_2">Agree somewhat</label></div>
 				</td>
 				<td headers="Q46_header3" class="gridcell"><input tabindex="8" type="radio" name="Q46_4" id="Q46_4_3" value="3">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_4_3">Neither agree nor disagree</label></div>
 				</td>
 				<td headers="Q46_header4" class="gridcell"><input tabindex="9" type="radio" name="Q46_4" id="Q46_4_4" value="4">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_4_4">Disagree somewhat</label></div>
 				</td>
 				<td headers="Q46_header5" class="gridcell"><input tabindex="10" type="radio" name="Q46_4" id="Q46_4_5" value="5">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_4_5">Disagree strongly</label></div>
 				</td>
 			</tr>
 			<tr>
 				<th class="gridlabel">Makes it easy to find products - This is example of not so long message to demo for this exercise. This is the first sentence and then dot.</th>
 				<td headers="Q46_header1" class="gridcell"><input tabindex="11" type="radio" name="Q46_2" id="Q46_2_1" value="1">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_2_1">Agree strongly</label></div>
 				</td>
 				<td headers="Q46_header2" class="gridcell"><input tabindex="12" type="radio" name="Q46_2" id="Q46_2_2" value="2">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_2_2">Agree somewhat</label></div>
 				</td>
 				<td headers="Q46_header3" class="gridcell"><input tabindex="13" type="radio" name="Q46_2" id="Q46_2_3" value="3">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_2_3">Neither agree nor disagree</label></div>
 				</td>
 				<td headers="Q46_header4" class="gridcell"><input tabindex="14" type="radio" name="Q46_2" id="Q46_2_4" value="4">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_2_4">Disagree somewhat</label></div>
 				</td>
 				<td headers="Q46_header5" class="gridcell"><input tabindex="15" type="radio" name="Q46_2" id="Q46_2_5" value="5">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_2_5">Disagree strongly</label></div>
 				</td>
 			</tr>
 			<tr>
 				<th class="gridlabel">Displays products in a way that feels logical</th>
 				<td headers="Q46_header1" class="gridcell"><input tabindex="16" type="radio" name="Q46_1" id="Q46_1_1" value="1">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_1_1">Agree strongly</label></div>
 				</td>
 				<td headers="Q46_header2" class="gridcell"><input tabindex="17" type="radio" name="Q46_1" id="Q46_1_2" value="2">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_1_2">Agree somewhat</label></div>
 				</td>
 				<td headers="Q46_header3" class="gridcell"><input tabindex="18" type="radio" name="Q46_1" id="Q46_1_3" value="3">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_1_3">Neither agree nor disagree</label></div>
 				</td>
 				<td headers="Q46_header4" class="gridcell"><input tabindex="19" type="radio" name="Q46_1" id="Q46_1_4" value="4">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_1_4">Disagree somewhat</label></div>
 				</td>
 				<td headers="Q46_header5" class="gridcell"><input tabindex="20" type="radio" name="Q46_1" id="Q46_1_5" value="5">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_1_5">Disagree strongly</label></div>
 				</td>
 			</tr>
 			<tr>
 				<th class="gridlabel">Has a large selection of products</th>
 				<td headers="Q46_header1" class="gridcell"><input tabindex="21" type="radio" name="Q46_3" id="Q46_3_1" value="1">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_3_1">Agree strongly</label></div>
 				</td>
 				<td headers="Q46_header2" class="gridcell"><input tabindex="22" type="radio" name="Q46_3" id="Q46_3_2" value="2">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_3_2">Agree somewhat</label></div>
 				</td>
 				<td headers="Q46_header3" class="gridcell"><input tabindex="23" type="radio" name="Q46_3" id="Q46_3_3" value="3">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_3_3">Neither agree nor disagree</label></div>
 				</td>
 				<td headers="Q46_header4" class="gridcell"><input tabindex="24" type="radio" name="Q46_3" id="Q46_3_4" value="4">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_3_4">Disagree somewhat</label></div>
 				</td>
 				<td headers="Q46_header5" class="gridcell"><input tabindex="25" type="radio" name="Q46_3" id="Q46_3_5" value="5">
+					<span class="istyle"><span></span></span>
 					<div class="hidden"><label for="Q46_3_5">Disagree strongly</label></div>
 				</td>
 			</tr>
@@ -121,6 +147,25 @@
 </div>
 
 </div>
+
+
+<script>
+var $ = jQuery;	
+$(function() {
+	$ ('td,td input').click(function(event) {
+		/* Act on the event */
+		event.preventDefault();
+		var rbutton = $(this).find('input')
+		if (rbutton.prop('checked')) {
+				rbutton.prop('checked', 0)
+		}
+		else {
+			rbutton.prop('checked', 1)
+		}
+	});
+});
+
+</script>
 
 </body>
 </html>

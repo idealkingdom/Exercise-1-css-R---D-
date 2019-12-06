@@ -1,12 +1,59 @@
 /* Global */
+	/* Body css */
 	body{
 		background:lightblue;
 	}
+	
+	/* change font for text in headers and title */
+	div.questiontitle, tr th.scale,th.gridlabel{
+		font-family: 'Roboto';
+	}
+	
+	/* style for grid/punches text */
+	tr th.gridlabel{
+		font-weight: normal;
+	}
+
+	/* radio and td pointer when hover */
+	input[type=radio],td{
+		cursor: pointer;
+	}
+
+	/* Hide Input from the cells for our custom radio input css */
+	td input[type=radio]{
+		position: absolute;
+		-moz-opacity: 0;
+		-khtml-opacity: 0;
+		opacity: 0;
+		left: -9999px;
+	}
 
 
+	/* if radio is checked pop/show the circle inside the radio and css*/
+	input[type=radio]:checked ~ span.istyle span{
+	display: inline-block;
+  	height: 13px;
+  	width: 13px;
+  	background-color: rgba(63, 129, 235,1);
+  	border-radius: 50%;
+	}
 
-/* smartphones, iPhone, portrait 480x320 phones */
-@media (min-width:320px)  { 
+	/* Input radio new style/image css */
+	span.istyle{
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		border: 1px solid grey;
+		border-radius: 50%;
+		text-align: center;
+		-webkit-box-shadow: 0px 0px 0px 2px rgba(235, 238, 242,1);
+		-moz-box-shadow: 0px 0px 0px 2px rgba(235, 238, 242,1);
+		box-shadow: 0px 0px 0px 1px rgba(235, 238, 242,1);
+	}
+
+/* smartphones, iPhone, portrait 480x320 phones minimum */
+@media (min-width:320px)  {
+	/* General container for components */
 		div.tcontainer{
 			background: white;
 			border: 4px outset rgba(28,110,164,0.55);
@@ -15,26 +62,36 @@
 			width: 98%;
 		}
 
-
+	/* question title css */
 		div.questiontitle{
 			margin: 3% auto 5% auto;
 			padding: 0 10px 0 20px;
 		}
+	
+	/* table css */
+		table{
+			table-layout: fixed;
+		}
 
+	/* Hide scale on mobile */
 		tr th.scale{
 			display:none;
 		}
+	/* Adjust cells and grid/punches css display*/
 		tr td,th.gridlabel{
 			padding: 20px 20px;
 			display: flex;
 			text-align:initial;
+			
 		}
+		tr th.gridlabel{
+			background: #aaeaea;
+		}
+	/* Add padding for radio button and text */
 		tr td div{
 			padding-left: 10px;
 		}
-		tr{
-			border: 1px solid black;
-		}
+
 }
 
 
@@ -44,12 +101,13 @@
 
 		div.tcontainer{
 			background: white;
-			background-color: rgba(255,255,255,0.8);
-			box-shadow: 4px 4px 4px 4px;
+			-webkit-box-shadow: 7px 10px 19px 1px rgba(66,63,66,1);
+			-moz-box-shadow: 7px 10px 19px 1px rgba(66,63,66,1);
+			box-shadow: 7px 10px 19px 1px rgba(66,63,66,1);
 			border: 4px outset rgba(28,110,164,0.55);
 			outline-offset: 6px;
 			margin: 40px auto;
-			width: 1000px;
+			width: 900px;
 		}
 		div.answersection{
 			padding-right: 10px;
@@ -57,13 +115,13 @@
 		div.questiontitle{
 			margin: 3% auto 5% auto;
 			padding: 0 10px 0 20px;
+			font-weight: 200;
 		}
 
 		table{
-			margin-left: auto;
-			margin-right: auto;
+			margin: 0 auto 15px 10px;
+			border-collapse: collapse;
 		}
-
 		tr th.scale{
 			display:table-cell;
 			text-align: center;
@@ -71,19 +129,34 @@
 			word-wrap: break-word;
 			border-bottom: 3px solid rgba(28,110,164,0.55);
 			border-radius: 3px;
+			border-collapse: collapse;
+			width: 10%;
 		}
-		tr td{
+		tr td,th.scale{
 			display: table-cell;
 			text-align: center;
+			word-wrap: break-word;
+			border: 0.01em solid gray;
+			border: 0.01em solid #b2b8b4;
 
 		}
 
-		th.gridlabel{
+		tr th.gridlabel{
 			display: table-cell;
+			background: #ededed;
+			border: 0.01em solid #b2b8b4;
+    		font-size: 13px;
+    		width: 40%;
 		}
 
 		tr td div.hidden{
 				display: none;
 		}
+
+		span.istyle{
+			margin: 0 auto 0 auto;
+		}
+
+
 
 }	
