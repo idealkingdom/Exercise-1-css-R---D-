@@ -142,9 +142,7 @@ var $ = jQuery;
 $(function() {
 	/*Copy SVG check html to inside span*/ 
 	var but = $ ("#istylecont").clone()
-	$ ("tr:not(:first) td").append(but);
-
-
+	$ (but).insertAfter('tr td.gridcell input');
 
 		/* TD cell on click*/
 	$ ('td,td input').click(function(event) {
