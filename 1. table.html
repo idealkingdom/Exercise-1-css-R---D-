@@ -30,8 +30,8 @@
 		<tbody>
 			<tr>
 				<th class="gridlabel">Looks high-quality</th>
-				<td headers="Q46_header1" class="gridcell"><input tabindex="1" type="radio" name="Q46_5" id="Q46_5_1" value="1">
-					<span class="istyle"><span></span></span>
+				<td headers="Q46_header1" class="gridcell"><span><input tabindex="1" type="radio" name="Q46_5" id="Q46_5_1" value="1">
+					<span class="istyle"><span></span></span></span>
 					<div class="hidden"><label for="Q46_5_1">Agree strongly</label></div>
 				</td>
 				<td headers="Q46_header2" class="gridcell"><input tabindex="2" type="radio" name="Q46_5" id="Q46_5_2" value="2">
@@ -154,12 +154,16 @@
 <script>
 var $ = jQuery;	
 $(function() {
-
+	/*Copy SVG check html to inside span*/ 
 	var but = $ ("#checkSVG").clone()
 	$ ("tr:not(:first) td span.istyle span").append(but);
 
+
+
+
+		/* TD cell on click*/
 	$ ('td,td input').click(function(event) {
-		/* Act on the event */
+		
 		event.preventDefault();
 		var rbutton = $(this).find('input')
 		if (rbutton.prop('checked')) {
