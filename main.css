@@ -80,8 +80,9 @@
 			background: #aaeaea;
 		}
 	/* Add padding for radio button and text */
-		tr td div{
+		tr td div.hidden{
 			padding-left: 10px;
+			padding-top: 6px;
 		}
 
 }
