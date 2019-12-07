@@ -34,6 +34,9 @@
 	/* if radio is checked pop/show the circle inside the radio and css*/
 	input[type=radio]:checked ~ span.istyle span{
 		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		margin: 4px auto 2px auto;
 	}
 
 	span.istyle span{
@@ -42,9 +45,12 @@
 
 	/* Input radio new style/image css */
 	span.istyle{
-		display: inline-block;
-		width: 15px;
-		height: 15px;
+		
+		  display: flex;
+  justify-content: center;
+  align-items: center;
+		width: 17px;
+		height: 17px;
 		border: 1px solid grey;
 		vertical-align: middle;
 		border-radius: 50%;
