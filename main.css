@@ -6,7 +6,7 @@
 	
 	/* change font for text in headers and title */
 	div.questiontitle, tr th.scale,th.gridlabel{
-		font-family: 'Roboto';
+		font-family: 'Arial';
 	}
 	
 	/* style for grid/punches text */
@@ -139,6 +139,7 @@
 			display: table-cell;
 			text-align: center;
 			word-wrap: break-word;
+			font-size: 13px;
 			border: 0.01em solid gray;
 			border: 0.01em solid #b2b8b4;
 
