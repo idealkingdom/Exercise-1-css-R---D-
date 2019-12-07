@@ -30,25 +30,14 @@
 		left: -9999px;
 	}
 
-	/* on Hover TD span style for radio input */
-	td:hover span.istyle span{
-		display: inline-block;
-		height: 13px;
-  		width: 13px;
-		background-color: rgba(63, 129, 235,0.7);
-  		border-radius: 50%;
-  		transition: ease 0.2s;
-  		margin: 1px 0 2px 0;
-	}
+
 	/* if radio is checked pop/show the circle inside the radio and css*/
 	input[type=radio]:checked ~ span.istyle span{
-	display: inline-block;
-	position: relative;
-  	height: 13px;
-  	width: 13px;
-  	background-color: rgba(63, 129, 235,1);
-  	border-radius: 50%;
-  	margin: 1px 0 2px 0;
+		display: block;
+	}
+
+	span.istyle span{
+		display: none;
 	}
 
 	/* Input radio new style/image css */
