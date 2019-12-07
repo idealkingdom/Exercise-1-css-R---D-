@@ -128,12 +128,12 @@
 
 </div>
 
-<span id="istylecont" class="istylecont">
+<span id="istylecont" style="display: none;" class="istylecont">
 					<span class="istyle1"><svg height="30" width="30">
-  							<circle cx="15" cy="17" r="10" stroke="rgba(191, 198, 201)" stroke-width="2" fill="white" /> 
+  							<circle cx="15" cy="17" r="10" stroke="#bfc6c9" stroke-width="2" fill="white" /> 
 						</svg> </span>
 					<span class="istyle2" style="display: none;"><svg height="30" width="30"> 
-  							<circle cx="15" cy="17" r="10" stroke="rgba(203, 210, 214)" stroke-width="3	" fill="rgba(45, 137, 194)" />
+  							<circle cx="15" cy="17" r="10" stroke="#bfc6c9" stroke-width="3	" fill="#2d89c2" />
 						</svg> </span>
 </span>
 
@@ -141,7 +141,7 @@
 var $ = jQuery;	
 $(function() {
 	/*Copy SVG check html to inside span*/ 
-	var but = $ ("#istylecont").clone()
+	var but = $ ("#istylecont").clone().css('display','inline-block');
 	$ (but).insertAfter('tr td.gridcell input');
 
 		/* TD cell on click*/
