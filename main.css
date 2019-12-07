@@ -19,6 +19,16 @@
 		cursor: pointer;
 	}
 
+	/* on Hover TD span style for radio input */
+	td:hover span.istyle span{
+		display: inline-block;
+		height: 13px;
+  		width: 13px;
+		background-color: rgba(63, 129, 235,0.7);
+  		border-radius: 50%;
+  		transition: ease 0.5s;
+	}
+
 	/* Hide Input from the cells for our custom radio input css */
 	td input[type=radio]{
 		position: absolute;
@@ -70,6 +80,7 @@
 	
 	/* table css */
 		table{
+			width: 100%;
 			table-layout: fixed;
 		}
 
@@ -82,6 +93,7 @@
 			padding: 20px 20px;
 			display: flex;
 			text-align:initial;
+			word-wrap: break-word;
 			
 		}
 		tr th.gridlabel{
@@ -98,7 +110,7 @@
 /* tablet, landscape iPad, low-res laptops ands desktops */
 
 @media (min-width:961px)  { 
-
+		/* General container for components */
 		div.tcontainer{
 			background: white;
 			-webkit-box-shadow: 7px 10px 19px 1px rgba(66,63,66,1);
@@ -109,19 +121,28 @@
 			margin: 40px auto;
 			width: 900px;
 		}
+
+		/* Answer section css */
 		div.answersection{
-			padding-right: 10px;
+			padding-right: 20px;
 		}
+
+		/* question title css */
 		div.questiontitle{
 			margin: 3% auto 5% auto;
 			padding: 0 10px 0 20px;
 			font-weight: 200;
+			
 		}
 
+		/* table css */
+
 		table{
+			table-layout: fixed;
 			margin: 0 auto 15px 10px;
 			border-collapse: collapse;
 		}
+		/* column head css */
 		tr th.scale{
 			display:table-cell;
 			text-align: center;
@@ -130,8 +151,9 @@
 			border-bottom: 3px solid rgba(28,110,164,0.55);
 			border-radius: 3px;
 			border-collapse: collapse;
-			width: 10%;
+			width: 11%;
 		}
+		/* coumn head and cells css */
 		tr td,th.scale{
 			display: table-cell;
 			text-align: center;
@@ -140,7 +162,7 @@
 			border: 0.01em solid #b2b8b4;
 
 		}
-
+		/* punches/grid text css */
 		tr th.gridlabel{
 			display: table-cell;
 			background: #ededed;
@@ -148,11 +170,12 @@
     		font-size: 13px;
     		width: 40%;
 		}
-
+		/* Extra header hidden in PC mode */
 		tr td div.hidden{
 				display: none;
 		}
 
+		
 		span.istyle{
 			margin: 0 auto 0 auto;
 		}
