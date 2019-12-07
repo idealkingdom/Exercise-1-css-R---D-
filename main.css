@@ -36,7 +36,7 @@
 		display: block;
 	}
 
-	span.istyle span{
+	span.istyle span *{
 		display: none;
 	}
 
