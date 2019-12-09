@@ -37,9 +37,19 @@
 	/* if radio is checked pop/show the circle inside the radio and css*/
 	input[type=radio]:checked ~ span.istylecont span.istyle2{
 		display: inline-block !important;
-		transition: border-color 3s;
 	}
 
+	/*If hover and not checked show opacity radio*/
+	td:hover > input[type=radio]:not(:checked) ~ span.istylecont > span.istylehover{
+		display: inline-block !important;
+
+	}
+
+	/*If hover hide default non selected container*/
+	td:hover > span.istylecont > span.istyle1{
+		display: none !important;
+
+	}
 
 /* smartphones, iPhone, portrait 480x320 phones minimum */
 @media (min-width:320px)  {
